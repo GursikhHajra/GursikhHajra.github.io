@@ -4,64 +4,61 @@ const Projects = () => {
   const data = [
     {
       id: 0,
-
       title: "Portfolio (Website)",
-      github: "",
-      demo: "",
+      github: "https://github.com/GursikhHajra/GursikhHajra.github.io",
+      demo: "https://GursikhHajra.github.io",
     },
     {
       id: 1,
-
+      title: "yt-proxy (JavaScript)",
+      github: "https://github.com/GursikhHajra/yt-proxy",
+      demo: "",
+    },
+    {
+      id: 2,
       title: "Fitness App (Mobile App)",
       github: "https://github.com/GursikhHajra/WorkoutFinalProject",
       demo: "",
     },
     {
-      id: 7,
-
+      id: 3,
       title: "Rock Paper Scissors Game (Website)",
       github: "https://github.com/GursikhHajra/RockPaperScissorsGame",
       demo: "",
     },
     {
-      id: 2,
-
+      id: 4,
       title: "COVID19-Vaccine-Booking (Website)",
       github: "https://github.com/GursikhHajra/COVID19-Vaccine-Booking",
       demo: "",
     },
     {
-      id: 3,
-
-      title: "Student Register (C#)",
-      github: "https://github.com/GursikhHajra/Student",
-      demo: "",
-    },
-    {
-      id: 4,
-
-      title: "Final Review",
-      github: "https://github.com/GursikhHajra/FinalReview",
-      demo: "",
-    },
-    {
       id: 5,
-
-      title: "Art Culture",
-      github: "https://github.com/GursikhHajra/Art-Culture",
-      demo: "",
-    },
-    {
-      id: 6,
-
-      title: "Vaccine-Appointment-Native-Storage-",
+      title: "Vaccine Appointment (Native Storage)",
       github:
         "https://github.com/GursikhHajra/Vaccine-Appointment-Native-Storage-",
       demo: "",
     },
     {
+      id: 6,
+      title: "Student Register (C#)",
+      github: "https://github.com/GursikhHajra/Student",
+      demo: "",
+    },
+    {
       id: 7,
-
+      title: "Art Culture",
+      github: "https://github.com/GursikhHajra/Art-Culture",
+      demo: "",
+    },
+    {
+      id: 8,
+      title: "Final Review",
+      github: "https://github.com/GursikhHajra/FinalReview",
+      demo: "",
+    },
+    {
+      id: 9,
       title: "Capstone Project",
       github: "https://github.com/Peter-Mascherin/PhantomTroupeWebApp",
       demo: "",
@@ -80,13 +77,23 @@ const Projects = () => {
               <h3>{title}</h3>
 
               <div className="project_item-cta">
-                <a href={github} className="btn" target="_blank">
-                  {" "}
-                  GitHub
-                </a>
-                {demo != "" ? (
-                  <a href={demo} className="btn btn-primary" target="_blank">
-                    {" "}
+                {github ? (
+                  <a
+                    href={github}
+                    className="btn"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    GitHub
+                  </a>
+                ) : null}
+                {demo ? (
+                  <a
+                    href={demo}
+                    className="btn btn-primary"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Live Demo
                   </a>
                 ) : null}

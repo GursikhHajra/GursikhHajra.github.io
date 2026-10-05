@@ -7,7 +7,7 @@ import "./Header.css";
 
 const Header = () => {
   const [text, setText] = useState("");
-  const textPhrases = ["Welcome to My Website", "I'm a Developer"];
+  const textPhrases = ["Software Developer", "Computer Science Student"];
   const typingSpeed = 100; // Typing speed in milliseconds
   const deleteSpeed = 100; // Delete speed in milliseconds
   const deleteDelay = 2000; // Delay before deleting in milliseconds
