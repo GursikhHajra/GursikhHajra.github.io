@@ -1,4 +1,4 @@
-import "./contact.css";
+import "./Contact.css";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -15,7 +15,7 @@ const Contact = () => {
         "service_uccpqt4",
         "template_391iz3i",
         formRef.current!,
-        "UEGJhjPyuafnqyAKs"
+        "UEGJhjPyuafnqyAKs",
       )
       .then(
         (result) => {
@@ -23,7 +23,7 @@ const Contact = () => {
         },
         (error) => {
           console.log(error.text);
-        }
+        },
       );
 
     formRef.current?.reset();

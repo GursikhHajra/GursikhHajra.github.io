@@ -3,7 +3,7 @@ import CTA from "./CTA";
 import HeaderSocials from "./HeaderSocials";
 import backgroundImage from "../../assets/anime2-transformed.jpeg"; // Replace with the path to your background image
 
-import "./header.css";
+import "./Header.css";
 
 const Header = () => {
   const [text, setText] = useState("");
@@ -27,7 +27,7 @@ const Header = () => {
         setTimeout(() => {
           setIsTyping(true);
           setPhraseIndex((prevIndex) =>
-            prevIndex === textPhrases.length - 1 ? 0 : prevIndex + 1
+            prevIndex === textPhrases.length - 1 ? 0 : prevIndex + 1,
           );
           setText(""); // Clear the text
           setTimeout(() => {

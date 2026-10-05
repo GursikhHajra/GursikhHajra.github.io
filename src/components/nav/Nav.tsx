@@ -1,4 +1,4 @@
-import "./nav.css";
+import "./Nav.css";
 import {
   AiOutlineHome,
   AiOutlineUser,
@@ -27,7 +27,7 @@ const NavBar = () => {
         setActiveNav("#");
       }
     },
-    { passive: true }
+    { passive: true },
   );
 
   return (
